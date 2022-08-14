@@ -1,0 +1,28 @@
+<?php
+
+// TODO: use libraries module to load the library
+include_once('vendor/autoload.php');
+use Drupal\node\NodeInterface;
+/**
+ * Implements hook_theme().
+ */
+function product_qr_theme($existing, $type, $theme, $path) {
+  return [
+    'node__product_qr_product' => [
+      'template' => 'node--product-qr-product',
+      'base hook' => 'node',
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_node_update().
+ */
+function product_qr_node_update(NodeInterface $node) {
+  // Deleting the purchase QR cahce when updating the node
+//  $cid = 'product_qr:' . 'node_'.$node->id();
+//  \Drupal::cache()->delete($cid);
+
+
+}

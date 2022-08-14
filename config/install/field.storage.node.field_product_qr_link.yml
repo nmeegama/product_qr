@@ -1,0 +1,19 @@
+uuid: 499416d6-1540-4f64-b431-46f14d2ed5df
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_product_qr_link
+field_name: field_product_qr_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

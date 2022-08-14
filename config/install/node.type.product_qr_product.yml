@@ -1,0 +1,20 @@
+uuid: aba0fd5e-5b50-45b5-93f0-55ab0a9ca127
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: xjWwnK83lL7A8jyIvfQZpyK2D7dFC3ZcaOqlTFpvc1w
+name: 'Product (product_qr)'
+type: product_qr_product
+description: 'A product content type generated using a custom product qr module'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

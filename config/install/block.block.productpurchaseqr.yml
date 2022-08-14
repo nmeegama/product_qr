@@ -1,0 +1,28 @@
+uuid: 5596c88e-a513-4394-8320-81fb292ea4e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - product_qr
+  theme:
+    - bartik
+id: productpurchaseqr
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: product_qr_block
+settings:
+  id: product_qr_block
+  label: 'Product Purchase QR'
+  label_display: visible
+  provider: product_qr
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product_qr_product: product_qr_product

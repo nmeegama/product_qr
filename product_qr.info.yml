@@ -1,0 +1,9 @@
+name: Product QR generatore
+type: module
+description: 'Module to generate a product content type and a qr code per product'
+package: Custom
+version: 1.0
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:media
+  - drupal:media_library

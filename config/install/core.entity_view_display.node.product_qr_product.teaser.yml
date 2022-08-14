@@ -1,0 +1,36 @@
+uuid: d965ce4f-3d72-4da7-9f57-1b13b1a5c311
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product_qr_product.body
+    - field.field.node.product_qr_product.field_product_qr_image
+    - field.field.node.product_qr_product.field_product_qr_link
+    - node.type.product_qr_product
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 72jlYoFmqvpfZmXkRoh71oqImX9a8TboL-MRMUr9fWU
+id: node.product_qr_product.teaser
+targetEntityType: node
+bundle: product_qr_product
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_product_qr_image: true
+  field_product_qr_link: true

@@ -1,0 +1,15 @@
+{
+    "name": "drupal/product_qr",
+    "description": "A module that creates a product content type with a QR code",
+    "type": "drupal-mmodule",
+    "authors": [
+        {
+            "name": "Niraj Meegama",
+            "email": "nmeegama@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "bacon/bacon-qr-code": "dev-master"
+    }
+}
